@@ -460,7 +460,7 @@ a:hover {
     font-size: 10em;
     font-style: bold;
     color: rgb(218, 209, 209);
-    top: 22rem;
+    top: 25rem;
     right: -58%;
     user-select: none;
 }
@@ -588,45 +588,10 @@ a:hover {
     }
 }
 
-.skills-languages-logo {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    row-gap: 5.6rem;
-}
-
-.skills-language-logo {
-    width: 9.2rem;
-    transform: scale(1);
-}
-
-.skills-language-logo:hover {
-    transform: scale(1.3);
-    transition-property: transform;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-    cursor: pointer;
-}
-
 .faded-text-container {
     overflow-x: hidden;
     width: 100%;
     height: fit-content;
-}
-
-.faded-skill-text {
-    position: relative;
-    color: #000;
-    opacity: 15%;
-    text-transform: capitalize;
-    font-size: 25rem;
-    font-weight: 500;
 }
 
 /* contact form section */
