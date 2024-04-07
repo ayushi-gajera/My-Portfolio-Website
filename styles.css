@@ -365,6 +365,14 @@ a:hover {
     background-image: url(./Images/Project4.jpg);
 }
 
+#project5 {
+    background-image: url(./Images/Project5.jpg);
+}
+
+#project5 .project-content p {
+    width: 600px;
+}
+
 @media (max-width:1300px) {
     .page-header {
         padding-top: 30px;
