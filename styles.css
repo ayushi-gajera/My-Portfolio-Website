@@ -29,6 +29,11 @@
     margin-top: 1rem;
 }
 
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
 .logo-container {
     display: flex;
 }
@@ -76,6 +81,10 @@ a:hover {
     position: relative;
     width: fit-content;
     margin-top: -2rem;
+}
+
+.myImage {
+    max-height: 350px;
 }
 
 .user-image {
@@ -142,8 +151,8 @@ a:hover {
 }
 
 .btn-pink {
-    height: 3rem;
-    width: 10.5rem;
+    max-height: 3rem;
+    max-width: 10.5rem;
     background-color: var(--bgOrange);
     color: white;
     text-align: center;
@@ -268,6 +277,7 @@ a:hover {
     padding: 2em;
     bottom: 20%;
     z-index: 5;
+    width: 70%;
     gap: 1em;
     transition: all 0.4s;
 }
@@ -330,24 +340,10 @@ a:hover {
     background-image: url(./Images/Project1.jpg);
 }
 
-#project1-content {
-    padding: 2rem 15rem 2rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 #project2 {
     margin-left: 120px;
     background-position: center;
     background-image: url(./Images/Project2.jpg);
-}
-
-#project2-content {
-    padding: 1rem 0 1rem 20rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .project-skill-container1 {
@@ -369,78 +365,8 @@ a:hover {
     background-image: url(./Images/Project5.jpg);
 }
 
-#project5 .project-content p {
-    width: 600px;
-}
-
-@media (max-width:1300px) {
-    .page-header {
-        padding-top: 30px;
-        color: var(--bgOrange);
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .project-container {
-        padding: 5px;
-        margin: 10px;
-        gap: 60px;
-    }
-
-    .project-card {
-        width: 100%;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .project-content {
-        scale: 0.5;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
-
-    .project-content-left {
-        left: 0;
-    }
-
-    .project-heading {
-        font-size: 40px;
-        width: 100%;
-    }
-
-    .project-sub-heading {
-        width: 100%;
-    }
-
-    #project2 {
-        margin-left: 0;
-    }
-
-    #project4 {
-        margin-left: 0;
-    }
-
-    .project-skill-container {
-        width: 100%;
-    }
-
-    .project-skill {
-        width: 35px;
-    }
-
-    .project-card:hover .project-number {
-        display: none;
-    }
-
-    .project-card:hover .project-content {
-        scale: 0.55;
-    }
-}
-
 /* skills */
+
 .skills-container {
     display: flex;
     margin: -5rem auto;
@@ -474,6 +400,8 @@ a:hover {
 }
 
 .blob-style {
+    height: 300px;
+    width: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -603,6 +531,7 @@ a:hover {
 }
 
 /* contact form section */
+
 .contact-wrapper {
     background-color: rgba(0, 0, 0, 0.07);
     padding: 5rem 0;
@@ -696,6 +625,7 @@ i {
 }
 
 /* footer section */
+
 .footer-section {
     position: relative;
     width: 100%;
@@ -754,4 +684,720 @@ i {
     color: #e84949;
     transition: all 8.8ms ease;
     cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width:490px) {
+
+    .btn-grp {
+        display: flex;
+    }
+
+    .btn-pink {
+        padding-top: 0;
+        font-size: 0.5rem;
+        height: 1rem;
+        width: 4rem;
+    }
+
+    .logo {
+        height: 25px;
+        width: 25px;
+    }
+
+    #name {
+        font-size: 0.8rem;
+    }
+
+    .nav-items {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 30%;
+    }
+
+    /* Hero Section */
+
+    .left-part {
+        margin-top: -80px;
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .hero-section-heading {
+        font-size: 1.3rem;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 1.2rem;
+    }
+
+    .hero-section-description {
+        font-size: 0.6rem;
+    }
+
+    .right-part {
+        margin-top: -80px;
+    }
+
+    .myImage {
+        max-height: 130px;
+    }
+
+    .faded-text {
+        margin-top: -40px;
+        font-size: 2em;
+        bottom: -30%;
+    }
+
+    .btn-project {
+        height: 1.5rem;
+    }
+
+    /* Skills */
+
+    .blob-style {
+        display: none;
+    }
+
+    .skills-logo {
+        height: 1rem;
+        width: 1.5rem;
+    }
+
+    .skill-heading {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .caps {
+        font-size: 25px;
+    }
+
+    .skill-subHeading {
+        width: 100%;
+    }
+
+    .skill-subHeading p {
+        font-size: 7px;
+    }
+
+    .skills-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 1rem 30rem 0rem 0rem;
+        width: 150vw;
+    }
+
+    .skill-fade-text {
+        font-size: 7em;
+        top: -50rem;
+        right: 100%;
+    }
+
+    /* Contact */
+
+    .contact-heading>h1 {
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        color: #e84949;
+    }
+
+    .contact-heading>p {
+        margin-left: 1.5rem;
+        font-size: 0.8rem;
+        color: rgb(131, 130, 130);
+    }
+
+    /* Footer */
+
+    .footer-section {
+        height: 10rem;
+        gap: 1.8rem;
+    }
+
+    .profile-name {
+        font-size: 2.5rem;
+    }
+
+    .footer-text {
+        gap: 0.7rem;
+        font-size: 0.77rem;
+    }
+
+    .footer-social-icon>a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 490px) and (max-width:570px) {
+
+    /* Navbar */
+
+    .btn-pink {
+        padding-top: 0;
+        font-size: 0.7rem;
+        height: 1.5rem;
+        width: 5rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        max-width: 40%;
+    }
+
+    .logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    #name {
+        font-size: 1rem;
+    }
+
+    .nav-items {
+        font-size: 1rem;
+    }
+
+    /* Hero Section */
+
+    .left-part {
+        margin-top: -70px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .hero-section-heading {
+        font-size: 1.4rem;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 1.3rem;
+    }
+
+    .hero-section-description {
+        font-size: 0.65rem;
+    }
+
+    .right-part {
+        margin-top: -70px;
+    }
+
+    .myImage {
+        max-height: 170px;
+    }
+
+    .faded-text {
+        font-size: 2.5em;
+        left: 3%;
+        bottom: -40%;
+    }
+
+    .btn-project {
+        height: 2rem;
+    }
+
+    /* Skills */
+
+    .blob-style {
+        height: 200px;
+        width: 100px;
+    }
+
+    .skills-logo {
+        height: 1.5rem;
+        width: 2rem;
+    }
+
+    .skill-heading {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .caps {
+        font-size: 30px;
+    }
+
+    .skill-subHeading {
+        width: 80%;
+    }
+
+    .skill-subHeading p {
+        font-size: 7.5px;
+    }
+
+    .skills-container {
+        padding: 1rem -50rem 0rem 0rem;
+        width: 100vw;
+    }
+
+    .skill-fade-text {
+        font-size: 5em;
+        top: 18rem;
+        right: -55%;
+    }
+
+    /* Contact */
+
+    .contact-heading>h1 {
+        margin-left: 5rem;
+        font-size: 2rem;
+        color: #e84949;
+    }
+
+    .contact-heading>p {
+        margin-left: 5rem;
+        font-size: 1rem;
+        color: rgb(131, 130, 130);
+    }
+
+    /* Footer */
+
+    .footer-section {
+        height: 14rem;
+        gap: 8rem;
+    }
+
+    .profile-name {
+        font-size: 3.8rem;
+    }
+
+    .footer-text {
+        gap: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-social-icon>a {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 570px) and (max-width:680px) {
+
+    /* Navbar */
+
+    .btn-pink {
+        padding-top: 0;
+        font-size: 0.8rem;
+        height: 1.8rem;
+        width: 6rem;
+    }
+
+    .logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+
+    .nav-items {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        max-width: 50%;
+    }
+
+    /* Hero Section */
+
+    .left-part {
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-section-heading {
+        font-size: 1.5rem;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-section-description {
+        font-size: 0.7rem;
+    }
+
+    .right-part {
+        margin-top: -50px;
+    }
+
+    .myImage {
+        max-height: 200px;
+    }
+
+    .faded-text {
+        font-size: 2.5em;
+        left: 3%;
+        bottom: -40%;
+    }
+
+    /* Skills */
+
+    .blob-style {
+        height: 150px;
+        width: 75px;
+    }
+
+    .skills-logo {
+        height: 1.8rem;
+        width: 2.5rem;
+    }
+
+    .skill-heading {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .caps {
+        font-size: 40px;
+    }
+
+    .skill-subHeading {
+        width: 70%;
+    }
+
+    .skill-subHeading p {
+        font-size: 9px;
+    }
+
+    .skills-container {
+        padding: 1rem 15rem 0rem 1 rem;
+        width: 100vw;
+    }
+
+    .skill-fade-text {
+        font-size: 6em;
+        top: 20rem;
+        right: -55%;
+    }
+
+    /* Contact */
+
+    .contact-heading>h1 {
+        margin-left: 6rem;
+        font-size: 2.3rem;
+    }
+
+    .contact-heading>p {
+        margin-left: 6rem;
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+
+    .profile-name {
+        font-size: 4.5rem;
+    }
+
+    .footer-text {
+        gap: 0.9rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-social-icon>a {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 680px) and (max-width:799px) {
+
+    /* Navbar */
+
+    .btn-pink {
+        padding-top: 0;
+        font-size: 0.9rem;
+        height: 2rem;
+        width: 7rem;
+    }
+
+    .logo {
+        height: 35px;
+        width: 35px;
+    }
+
+    #name {
+        font-size: 1.7rem;
+    }
+
+    .nav-items {
+        font-size: 1.4rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        max-width: 60%;
+    }
+
+    /* Hero Section */
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-section-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 2.2rem;
+    }
+
+    .hero-section-description {
+        font-size: 0.8rem;
+    }
+
+    .myImage {
+        max-height: 250px;
+    }
+
+    .faded-text {
+        font-size: 3em;
+        left: 3%;
+        bottom: -20%;
+    }
+
+    /* Skills */
+
+    .skills-logo {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .skill-heading {
+        font-size: 32px;
+        line-height: 28px;
+    }
+
+    .caps {
+        font-size: 60px;
+    }
+
+    .skill-subHeading {
+        width: 80%;
+    }
+
+    .skill-subHeading p {
+        font-size: 9.5px;
+    }
+
+    .skills-container {
+        padding: 12rem 20rem 15rem 0;
+        width: 140vw;
+    }
+
+    .skill-fade-text {
+        font-size: 7em;
+        top: 20rem;
+        right: -60%;
+    }
+
+    /* Contact */
+
+    .contact-heading>h1 {
+        margin-left: 7rem;
+        font-size: 2.6rem;
+    }
+
+    .contact-heading>p {
+        margin-left: 7rem;
+        font-size: 1.7rem;
+    }
+
+    /* Footer */
+
+    .profile-name {
+        font-size: 5rem;
+    }
+
+    .footer-text {
+        gap: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .footer-social-icon>a {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width:1060px) {
+
+    /* Navbar */
+    .logo {
+        height: 35px;
+        width: 35px;
+    }
+
+    #name {
+        font-size: 1.7rem;
+    }
+
+    .nav-items {
+        font-size: 1.4rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        max-width: 70%;
+    }
+
+    /* Hero Section */
+
+    .hero-section-heading {
+        font-size: 2rem;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 2.4rem;
+    }
+
+    .hero-section-description {
+        font-size: 1rem;
+    }
+
+    .myImage {
+        max-height: 300px;
+    }
+
+    .faded-text {
+        font-size: 3.5em;
+        left: 3%;
+        bottom: -20%;
+    }
+
+    /* Skills */
+
+    .skills-logo {
+        height: 4rem;
+        width: 3.8rem;
+    }
+
+    .skill-heading {
+        font-size: 50px;
+    }
+
+    .caps {
+        font-size: 80px;
+    }
+
+    .skill-subHeading {
+        margin-top: 1rem;
+        width: 90%;
+    }
+
+    .skill-subHeading p {
+        font-size: 12px;
+    }
+
+    .skills-container {
+        padding: 12rem 0rem;
+        width: 105vw;
+    }
+
+    .skill-fade-text {
+        font-size: 9em;
+        top: 17rem;
+        right: -55%;
+    }
+
+    /* Contact */
+
+    .contact-heading>h1 {
+        margin-left: 8rem;
+        font-size: 2.8rem;
+    }
+
+    .contact-heading>p {
+        margin-left: 8rem;
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width:1300px) {
+
+    /* Project Section */
+
+    .page-header {
+        padding-top: 30px;
+        color: var(--bgOrange);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .project-container {
+        padding: 5px;
+        margin: 10px;
+        gap: 60px;
+    }
+
+    .project-card {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project-content {
+        scale: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .project-content-left {
+        left: 0;
+    }
+
+    .project-heading {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .project-sub-heading {
+        width: 100%;
+    }
+
+    #project2 {
+        margin-left: 0;
+    }
+
+    #project4 {
+        margin-left: 0;
+    }
+
+    .project-skill-container {
+        width: 100%;
+    }
+
+    .project-skill {
+        width: 35px;
+    }
+
+    .project-card:hover .project-number {
+        display: none;
+    }
+
+    .project-card:hover .project-content {
+        scale: 0.55;
+    }
 }
