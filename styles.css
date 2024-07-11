@@ -335,13 +335,13 @@ a:hover {
     transform: scale(1.1);
 }
 
-#project1 {
+#project4 {
+    margin-left: 120px;
     background-position: center;
     background-image: url(./Images/Project1.jpg);
 }
 
-#project2 {
-    margin-left: 120px;
+#project5 {
     background-position: center;
     background-image: url(./Images/Project2.jpg);
 }
@@ -356,13 +356,22 @@ a:hover {
     background-image: url(./Images/Project3.jpg);
 }
 
-#project4 {
+#project2 {
     margin-left: 120px;
     background-image: url(./Images/Project4.jpg);
 }
 
-#project5 {
+#project6 {
+    margin-left: 120px;
     background-image: url(./Images/Project5.jpg);
+}
+
+#project1 {
+    /* margin-left: 120px; */
+    background-position: 40%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./Images/Project6.jpg);
 }
 
 /* skills */
@@ -394,7 +403,7 @@ a:hover {
     font-size: 10em;
     font-style: bold;
     color: rgb(218, 209, 209);
-    top: 25rem;
+    top: 29rem;
     right: -58%;
     user-select: none;
 }
