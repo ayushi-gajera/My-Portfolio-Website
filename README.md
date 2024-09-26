@@ -1,3 +1,3 @@
 # My Portfolio
 
-It displays Projects, skills, and other relevant information with a responsive design.
+It displays projects, skills, and other relevant information with a responsive design.
